@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Scanner Inventario",
+    "slug": "scanner-inventario",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F0F14"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0F0F14"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_EXTERNAL_STORAGE"
+      ],
+      "package": "com.inventario.scanner"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Consenti l'accesso alla fotocamera per scansionare i codici a barre."
+        }
+      ]
+    ]
+  }
+}
